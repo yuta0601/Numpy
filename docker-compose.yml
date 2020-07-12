@@ -1,0 +1,7 @@
+jupyter:
+  build: ./docker/
+  container_name: JupyterLab
+  ports:
+    - "8888:8888"
+  volumes:
+    - $PWD/src:/work 
