@@ -35,7 +35,7 @@ CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--LabApp.token=''"]
 `docker build -t jupyter-lab:latest .`  
 
 ## Docker Run
-`docker run --rm -p 8888:8888 -v ~/WorkSpace/JupyterLaboratory/src:/work --name JupyterLab-on-Docker jupyter-lab:latest`
+`docker run --rm -p 8888:8888 -v $PWD/src:/work --name JupyterLab-on-Docker jupyter-lab:latest`
 
 ## docker-composeに対応
 `docker-compose up -d`
